@@ -9,7 +9,12 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        excerpt_separator: `<!-- excerpt -->`
+      }
+    },
     {
       resolve: 'gatsby-source-contentful',
       options: {
